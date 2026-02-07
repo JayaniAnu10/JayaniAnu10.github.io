@@ -1,7 +1,6 @@
-import { Cog, Eye, ExternalLink, MoveUp } from "lucide-react";
+import { Eye, ExternalLink, MoveUp } from "lucide-react";
 import SmallTechIcons from "./SmallTechIcons";
 import RepoButton from "./buttons/RepoButton";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import heroImage from "../assets/eventra4.png";
 
@@ -109,7 +108,7 @@ const Project_2 = () => {
               className="inline-flex items-center gap-1.5 text-teal-400 hover:text-teal-300 text-sm font-medium transition-colors w-fit group"
             >
               <ExternalLink className="size-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              www.zephyr.adithyashenal.me
+              www.eventra.jayanidahanayake.me
             </a>
             {/* action buttons row */}
             <div className="flex flex-wrap gap-2.5">
@@ -118,13 +117,6 @@ const Project_2 = () => {
                 text={"Repository · Deployed"}
                 link="https://github.com/JayaniAnu10/Event-ticketing-proj"
               />
-              <Link
-                to="projectOneArch"
-                className="inline-flex items-center gap-2 bg-teal-500/15 border border-teal-500/30 text-teal-400 hover:bg-teal-500/25 text-xs font-semibold px-4 py-2 rounded-full transition-colors duration-200"
-              >
-                <Cog size={14} />
-                System Architecture
-              </Link>
             </div>
 
             {/* ─── TECH STACK ─── */}

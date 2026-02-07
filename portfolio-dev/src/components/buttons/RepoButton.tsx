@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import githubIcon from "../../assets/github.svg";
+import githubIcon from "/public/icons/github.svg";
 
 interface Props {
   text: string;

@@ -9,7 +9,7 @@ const TechIcon = ({ iconName, techName }: Props) => {
       <img
         height="20"
         width="20"
-        src={new URL(`../assets/${iconName}.svg`, import.meta.url).href}
+        src={`/icons/${iconName}.svg`}
         alt={iconName}
         className=""
       />

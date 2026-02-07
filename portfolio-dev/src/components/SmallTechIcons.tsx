@@ -10,7 +10,7 @@ const SmallTechIcons = ({ iconName, techName }: Props) => {
         <img
           height="14"
           width="14"
-          src={new URL(`../assets/${iconName}.svg`, import.meta.url).href}
+          src={`/icons/${iconName}.svg`}
           alt={iconName}
         />
         <span className="text-xs font-medium">{techName}</span>
