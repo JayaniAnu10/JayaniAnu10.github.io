@@ -2,54 +2,35 @@ import { GraduationCap, BookOpen, Award } from "lucide-react";
 
 const educationData = [
   {
-    era: "2022 – Present",
+    era: "2023 – Present",
     phase: "Undergraduate",
     icon: GraduationCap,
     institution: "University of Ruhuna Sri Lanka",
     degree: "Bachelor of Computer Science (Undergraduate)",
     stream: "Computer Science",
     location: "Matara, Sri Lanka",
-    highlight: "Passed with higher GPA of 3.91",
-    tags: ["Data Structures - A", "OOP - A", "DBMS - A"],
-    accent: "text-blue-400",
-    glowColor: "bg-blue-500/10",
-    borderColor: "border-blue-500/30",
-    dotColor: "bg-blue-500",
-    dotGlow: "shadow-blue-500/50",
-    pillBg: "bg-blue-500/15",
-    pillBorder: "border-blue-500/30",
-    pillText: "text-blue-400",
+    highlight: "Passed with higher GPA of 3.98",
+    tags: ["Data Structures - A", "OOP - A", "DBMS - A+"],
+    accent: "text-teal-400",
+    glowColor: "bg-teal-500/10",
+    borderColor: "border-teal-500/30",
+    dotColor: "bg-teal-500",
+    dotGlow: "shadow-teal-500/50",
+    pillBg: "bg-teal-500/15",
+    pillBorder: "border-teal-500/30",
+    pillText: "text-teal-400",
     isCurrent: true,
   },
   {
-    era: "2021 – 2022",
-    phase: "Diploma",
-    icon: Award,
-    institution: "IMBS Green Campus",
-    degree: "Diploma in Human Resource Management (HRM)",
-    stream: "Human Resource Management",
-    location: "Gampaha, Sri Lanka",
-    highlight: "Passed with 1st class GPA of 3.75",
-    tags: ["Business Law - A", "Management - A", "HRM - A"],
-    accent: "text-blue-300",
-    glowColor: "bg-blue-500/8",
-    borderColor: "border-blue-500/20",
-    dotColor: "bg-blue-400",
-    dotGlow: "shadow-blue-500/40",
-    pillBg: "bg-blue-500/10",
-    pillBorder: "border-blue-500/25",
-    pillText: "text-blue-400",
-  },
-  {
-    era: "2017 – 2020",
+    era: "2021",
     phase: "G.C.E A/L",
     icon: BookOpen,
     institution: "G.C.E Advanced Level (A/L)",
     degree: "Physical Science Stream",
     stream: "Physical Science Stream",
     location: "Gampaha, Sri Lanka",
-    highlight: "Z-Score: 1.3905",
-    tags: ["Combined Mathematics - B", "I.C.T - B", "Physics - C"],
+    highlight: "Z-Score: 1.4291",
+    tags: ["Combined Mathematics - B", "Chemistry - B", "Physics - B"],
     accent: "text-gray-400",
     glowColor: "bg-gray-500/8",
     borderColor: "border-gray-500/20",
@@ -63,21 +44,21 @@ const educationData = [
 
 const EducationSection = () => {
   return (
-    <section className="bg-base-200 py-16 px-4" id="education">
+    <section className="bg-base-200 py-17 px-4" id="education">
       <div className="mx-auto w-full max-w-6xl">
         {/* ─── SECTION HEADING ─── */}
         <div className="text-center mb-14">
           <p className="text-xs uppercase tracking-widest text-base-content/80 font-semibold mb-2">
-            My Journey
+            Learning Journey
           </p>
 
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
             Education &amp;{" "}
-            <span className="text-blue-500">Certifications</span>
+            <span className="text-teal-500">Certifications</span>
           </h2>
 
           <p className="text-sm text-base-content/80 max-w-lg mx-auto mt-3 leading-relaxed">
-            Academic background and professional development milestones
+            Academic foundation and professional growth
           </p>
         </div>
 
@@ -133,7 +114,7 @@ const EducationSection = () => {
                             className={`inline-flex items-center gap-1.5 ${edu.pillBg} border ${edu.pillBorder} ${edu.pillText} text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full`}
                           >
                             {edu.isCurrent && (
-                              <span className="size-1.5 rounded-full bg-blue-400 animate-pulse" />
+                              <span className="size-1.5 rounded-full bg-teal-400 animate-pulse" />
                             )}
                             <Icon className="size-3" />
                             {edu.phase}

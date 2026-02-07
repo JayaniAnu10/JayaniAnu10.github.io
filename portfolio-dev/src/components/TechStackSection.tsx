@@ -5,6 +5,7 @@ import {
   GitBranch,
   Database,
   Smartphone,
+  Brain,
 } from "lucide-react";
 import TechIcon from "./TechIcon";
 import SectionHeading from "./SectionHeading";
@@ -24,6 +25,8 @@ const techCategories = [
       { iconName: "typescript", techName: "TypeScript" },
       { iconName: "jwt", techName: "JWT" },
       { iconName: "rest", techName: "RestAPI" },
+      { iconName: "postman", techName: "Postman" },
+      { iconName: "swagger", techName: "Swagger" },
       { iconName: "springai", techName: "Spring AI" },
     ],
   },
@@ -72,7 +75,7 @@ const techCategories = [
     ],
   },
   {
-    icon: Smartphone,
+    icon: Brain,
     title: "AI Tools & Tech",
     accent: "blue",
     skills: [
@@ -86,7 +89,7 @@ const TechStackSection = () => {
   return (
     <section className="bg-base-200 py-16 px-4 relative overflow-hidden">
       {/* ─── AMBIENT BACKGROUND GLOW ─── */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-500/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-500/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl">
         <SectionHeading
@@ -104,17 +107,17 @@ const TechStackSection = () => {
             return (
               <div
                 key={index}
-                className="relative group bg-base-200/50 border border-orange-500/40 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:shadow-md hover:shadow-black/10"
+                className="relative group bg-base-200/50 border border-teal-500/40 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:shadow-md hover:shadow-black/10"
               >
                 {/* subtle glow per card */}
-                <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/3 blur-2xl rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-teal-500/3 blur-2xl rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10 p-5">
                   {/* ── category header ── */}
                   <div className="flex items-center gap-3 mb-4">
                     {/* icon shell */}
-                    <div className="size-9 rounded-xl bg-orange-500/10 border border-orange-500/25 flex items-center justify-center shrink-0">
-                      <Icon className="size-4 text-orange-400" />
+                    <div className="size-9 rounded-xl bg-teal-500/10 border border-teal-500/25 flex items-center justify-center shrink-0">
+                      <Icon className="size-4 text-teal-400" />
                     </div>
 
                     {/* title */}

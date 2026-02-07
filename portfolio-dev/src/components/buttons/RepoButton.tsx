@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import githubIcon from "../../assets/github.svg";
 
 interface Props {
   text: string;
@@ -29,14 +30,12 @@ const RepoButton = ({ text, link }: Props) => {
               hover:bg-white/20 transition-all duration-200 hover:-translate-y-0.5
               "
       >
-        <img
-          height="15"
-          width="15"
-          src="https://cdn.simpleicons.org/github/black/white"
-          alt="GitHub"
-        />
+        <img src={githubIcon} alt="GitHub" className="w-3.5 h-3.5" />
         {text}
-        <ArrowUpRight className="size-3.5 ml-2 text-gray-500 group-hover:text-blue-400 transition-colors duration-200" />
+        <ArrowUpRight
+          size={14}
+          className="ml-2 text-gray-500 group-hover:text-teal-400 transition-colors duration-200"
+        />
       </a>
     </>
   );

@@ -16,19 +16,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "washenal55@gmail.com",
-    href: "mailto:washenal55@gmail.com",
+    value: "jayanianuththara10@gmail.com",
+    href: "mailto:jayanianuththara10@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+94 78 778 0589",
-    href: "tel:+94787780589",
+    value: "+94 72 113 0036",
+    href: "tel:+94721130036",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Kadawatha, Gampaha",
+    value: "Mirigama, Gampaha",
     href: null,
   },
 ];
@@ -43,16 +43,15 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/adithyashenal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhWE8ucKMSS29K8L0o8pl1w%3D%3D",
+    href: "https://linkedin.com/in/jayani-dahanayaka",
     textColor: "text-blue-600",
   },
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/AdithyaShenal",
+    href: "https://github.com/JayaniAnu10",
     textColor: "text-base-content",
   },
-  { icon: Instagram, label: "Instagram", href: "#", textColor: "text-red-700" },
 ];
 
 const ContactSection = () => {
@@ -60,6 +59,7 @@ const ContactSection = () => {
     register,
     handleSubmit,
     formState: { isSubmitting },
+    reset,
   } = useForm<MailFormData>();
 
   const submitHandler = async (data: MailFormData) => {
@@ -67,18 +67,20 @@ const ContactSection = () => {
 
     try {
       const result = await emailjs.send(
-        "service_l5nn9a4", // SERVICE ID
-        "template_jv62b3q", // TEMPLATE ID
+        "service_e1sbb75", // SERVICE ID
+        "template_wsedgua", // TEMPLATE ID
         {
           senderName: data.senderName,
           email: data.senderEmail,
           text: data.text,
           time: time,
         },
-        "xJdi_Tc_dP_vV3BrA",
+        "4kuRe8f7rlryMzeBV",
       );
 
       console.log("Email sent:", result.text);
+      // clear the form inputs after successful submit
+      reset();
     } catch (error) {
       console.error("Email error:", error);
     }
@@ -102,11 +104,11 @@ const ContactSection = () => {
           <div className="lg:col-span-2 flex flex-col gap-4">
             {/* ── info card ── */}
 
-            <div className="relative bg-base-200/60 border border-blue-500/40 backdrop-blur-sm rounded-2xl overflow-hidden">
+            <div className="relative bg-base-200/60 border border-teal-500/40 backdrop-blur-sm rounded-2xl overflow-hidden">
               <div className="relative z-10 p-5 flex flex-col gap-4">
                 {/* tiny badge */}
-                <span className="inline-flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full w-fit mb-3">
-                  <span className="size-1.5 rounded-full bg-blue-400 animate-pulse" />
+                <span className="inline-flex items-center gap-1.5 bg-teal-500/10 border border-teal-500/25 text-teal-400 text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full w-fit mb-3">
+                  <span className="size-1.5 rounded-full bg-teal-400 animate-pulse" />
                   Available
                 </span>
 
@@ -128,12 +130,12 @@ const ContactSection = () => {
                           items-center 
                           justify-center 
                           shrink-0 
-                          group-hover/row:border-blue-500/30 
-                          group-hover/row:bg-blue-500/10 
+                          group-hover/row:border-teal-500/30 
+                          group-hover/row:bg-teal-500/10 
                           transition-colors 
                           duration-200"
                       >
-                        <Icon className="size-3.5 group-hover/row:text-blue-400 transition-colors duration-200" />
+                        <Icon className="size-3.5 group-hover/row:text-teal-400 transition-colors duration-200" />
                       </div>
 
                       <div className="min-w-0">
@@ -146,7 +148,7 @@ const ContactSection = () => {
                       </div>
 
                       {item.href && (
-                        <ArrowUpRight className="size-3.5 text-gray-600 ml-auto mt-1 opacity-0 group-hover/row:opacity-100 group-hover/row:text-blue-400 transition-all duration-200" />
+                        <ArrowUpRight className="size-3.5 text-gray-600 ml-auto mt-1 opacity-0 group-hover/row:opacity-100 group-hover/row:text-teal-400 transition-all duration-200" />
                       )}
                     </div>
                   );
@@ -163,9 +165,9 @@ const ContactSection = () => {
             </div>
 
             {/* ── social pills ── */}
-            <div className="bg-base-200/40 border border-blue-500/40 backdrop-blur-sm rounded-xl p-4">
-              <span className="inline-flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full w-fit mb-3">
-                <span className="size-1.5 rounded-full bg-blue-400 animate-pulse" />
+            <div className="bg-base-200/40 border border-teal-500/40 backdrop-blur-sm rounded-xl p-4">
+              <span className="inline-flex items-center gap-1.5 bg-teal-500/10 border border-teal-500/25 text-teal-400 text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full w-fit mb-3">
+                <span className="size-1.5 rounded-full bg-teal-400 animate-pulse" />
                 Follow me
               </span>
               <div className="flex gap-4">
@@ -183,9 +185,8 @@ const ContactSection = () => {
                         bg-base-300/50 
                         border 
                         ${s.textColor}
-                        border-white/10 
-                        hover:border-blue-500/30 
-                        hover:bg-blue-500/10 
+                        border-teal-500/30 
+                        bg-teal-500/10 
                         font-semibold 
                         p-4 
                         rounded-full 
@@ -203,7 +204,7 @@ const ContactSection = () => {
 
           {/* ════════════ RIGHT COLUMN – FORM (3/5) ════════════ */}
           <div className="lg:col-span-3">
-            <div className="relative bg-base-200/60 border border-blue-500/40 backdrop-blur-sm rounded-2xl overflow-hidden h-full">
+            <div className="relative bg-base-200/60 border border-teal-500/40 backdrop-blur-sm rounded-2xl overflow-hidden h-full">
               <div className="relative z-10 p-5 sm:p-7 flex flex-col gap-5 h-full">
                 <div>
                   <h3 className="text-base text-base-content/80 font-bold tracking-tight">
@@ -244,13 +245,13 @@ const ContactSection = () => {
                       <input
                         {...register("senderName")}
                         type="text"
-                        placeholder="Adithya Shenal"
+                        placeholder="Jayani Anuththara"
                         required
                         className="
                             w-full bg-base-300/50 border border-white/10
                             text-sm text-gray-200 placeholder-base-content/30
                             rounded-lg px-3.5 py-2.5
-                            focus:outline-none focus:border-blue-500/40 focus:bg-base-300/70
+                            focus:outline-none focus:border-teal-500/40 focus:bg-base-300/70
                             transition-colors duration-200
                           "
                       />
@@ -269,7 +270,7 @@ const ContactSection = () => {
                             w-full bg-base-300/50 border border-white/10
                             text-sm text-gray-200 placeholder-base-content/30
                             rounded-lg px-3.5 py-2.5
-                            focus:outline-none focus:border-blue-500/40 focus:bg-base-300/70
+                            focus:outline-none focus:border-teal-500/40 focus:bg-base-300/70
                             transition-colors duration-200
                           "
                       />
@@ -290,7 +291,7 @@ const ContactSection = () => {
                         w-full flex-1 bg-base-300/50 border border-white/10
                         text-sm text-base-content/80 placeholder-base-content/30
                         rounded-lg px-3.5 py-2.5 resize-none
-                        focus:outline-none focus:border-blue-500/40 focus:bg-base-300/70
+                        focus:outline-none focus:border-teal-500/40 focus:bg-base-300/70
                         transition-colors duration-200
                       "
                     />
@@ -302,10 +303,10 @@ const ContactSection = () => {
                     disabled={isSubmitting}
                     className="
                       inline-flex items-center justify-center gap-2
-                      bg-blue-500 hover:bg-blue-400 disabled:opacity-60 disabled:cursor-not-allowed
+                      bg-teal-500 hover:bg-teal-400 disabled:opacity-60 disabled:cursor-not-allowed
                       text-white text-sm font-semibold
                       px-6 py-2.5 rounded-full
-                      shadow-md shadow-blue-500/25 hover:shadow-blue-500/40
+                      shadow-md shadow-teal-500/25 hover:shadow-teal-500/40
                       transition-all duration-200 hover:-translate-y-0.5
                       self-start
                     "

@@ -6,7 +6,7 @@ interface Props {
 const SmallTechIcons = ({ iconName, techName }: Props) => {
   return (
     <>
-      <span className="inline-flex items-center gap-2 bg-gray-900/30 py-2 px-3 rounded-full justify-center">
+      <span className="inline-flex items-center gap-2 bg-base-300 py-2 px-3 rounded-full justify-center">
         <img
           height="14"
           width="14"

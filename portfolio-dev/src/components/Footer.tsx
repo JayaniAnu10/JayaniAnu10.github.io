@@ -1,44 +1,38 @@
 import { MoveUp } from "lucide-react";
-import SmallTechIcons from "./SmallTechIcons";
+// footer small icons removed — keep import commented out in case we re-add later
+// import SmallTechIcons from "./SmallTechIcons";
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer sm:footer-horizontal bg-base-100 text-base-content p-10 border-t border-black/10">
-        <aside className="flex flex-col">
-          <p className="ml-3 font-semibold">This webiste developed using</p>
-          <div>
-            <SmallTechIcons iconName="react" techName="React 19" />
-            <SmallTechIcons iconName="daisyui" techName="Daisy UI" />
-            <SmallTechIcons iconName="vite" techName="Vite" />
-            <SmallTechIcons iconName="github/black/white" techName="GitHub" />
-          </div>
-        </aside>
+      <footer className="footer bg-base-100 text-base-content mt-12 border-t border-gray-700/20 shadow-2xl">
+        <div className="mx-auto w-full max-w-6xl px-4 py-4 pb-10 pt-10">
+          <div className="grid grid-cols-3 items-center">
+            <div className="flex items-center">
+              <div>
+                <h6 className="footer-title">Thank you</h6>
+                <p className="text-sm">Copyright © 2026 - Jayani Anuthtara</p>
+              </div>
+            </div>
 
-        <div>
-          <a
-            href="#hero"
-            className="text-blue-500 
-                        cursor-pointer 
-                        font-bold 
-                        animate-pulse 
-                        mt-2.5
-                        flex gap-2 items-center
-                        "
-          >
-            <MoveUp className="size-3" />{" "}
-            <p className="hover:scale-105 transition-transform duration-300">
-              Back to Top
-            </p>
-          </a>
+            <div className="flex justify-end">
+              <a
+                href="#hero"
+                className="text-teal-500 cursor-pointer font-bold animate-pulse flex gap-2 items-center"
+                aria-label="Back to top"
+              >
+                <MoveUp size={16} />
+                <span className="hover:scale-105 transition-transform duration-300">
+                  Back to Top
+                </span>
+              </a>
+            </div>
+
+            <div className="flex justify-end">
+              <p className="text-sm"></p>
+            </div>
+          </div>
         </div>
-
-        <nav>
-          <h6 className="footer-title">Thank you</h6>
-          <div className="grid grid-flow-col gap-4">
-            <p>Copyright © 2026 - Adithya Shenal</p>
-          </div>
-        </nav>
       </footer>
     </>
   );
