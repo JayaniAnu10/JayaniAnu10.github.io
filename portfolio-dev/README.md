@@ -1,0 +1,3 @@
+--color-base-100: oklch(98.5% 0.004 245); /_ page background _/
+--color-base-200: oklch(96.5% 0.012 240); /_ sections _/
+--color-base-300: oklch(92% 0.018 240); /_ cards / borders _/
