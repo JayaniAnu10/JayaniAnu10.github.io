@@ -3,12 +3,16 @@ import SmallTechIcons from "./SmallTechIcons";
 import RepoButton from "./buttons/RepoButton";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import heroImage from "../assets/eventra4.png";
+import heroImage from "../assets/eventra6.png";
 
 const Project_1 = () => {
   const [readMore, setReadMore] = useState<boolean>(false);
 
   const devRepos = [
+    {
+      name: "Repository · Deployed",
+      link: "",
+    },
     {
       name: "Backend",
       link: "",
@@ -140,11 +144,9 @@ const Project_1 = () => {
               </Link>
             </div>
 
-            {/* production repo pill */}
-            <RepoButton text={"Production Repository · Deployed"} link="" />
             {/* ─── TECH STACK ─── */}
             <div>
-              <p className="text-sm uppercase tracking-widest text-base-content/60 font-semibold whitespace-nowrap">
+              <p className="text-sm uppercase tracking-widest text-base-content/60 font-semibold whitespace-nowrap  mb-2">
                 Tech Stack
               </p>
               <div className="flex flex-wrap gap-1.5">

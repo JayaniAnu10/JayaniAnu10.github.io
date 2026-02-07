@@ -145,7 +145,7 @@ const Hero = () => {
                   duration-200 
                   hover:-translate-y-0.5"
               >
-                Contact Me
+                Download Resume
               </a>
             </div>
 

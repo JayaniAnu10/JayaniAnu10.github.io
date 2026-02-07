@@ -2,12 +2,16 @@ import { Eye, ExternalLink, MoveUp } from "lucide-react";
 import SmallTechIcons from "./SmallTechIcons";
 import RepoButton from "./buttons/RepoButton";
 import { useState } from "react";
-import heroImage from "../assets/eventra4.png";
+import heroImage from "../assets/eventra6.png";
 
 const Project_2 = () => {
   const [readMore, setReadMore] = useState<boolean>(false);
 
   const devRepos = [
+    {
+      name: "Repository · Deployed",
+      link: "https://github.com/JayaniAnu10/Event-ticketing-proj",
+    },
     {
       name: "Backend",
       link: "https://github.com/JayaniAnu10/Event-Ticketing",
@@ -111,17 +115,10 @@ const Project_2 = () => {
               www.eventra.jayanidahanayake.me
             </a>
             {/* action buttons row */}
-            <div className="flex flex-wrap gap-2.5">
-              {/* production repo pill */}
-              <RepoButton
-                text={"Repository · Deployed"}
-                link="https://github.com/JayaniAnu10/Event-ticketing-proj"
-              />
-            </div>
 
             {/* ─── TECH STACK ─── */}
             <div>
-              <p className="text-sm uppercase tracking-widest text-base-content/60 font-semibold whitespace-nowrap">
+              <p className="text-sm uppercase tracking-widest text-base-content/60 font-semibold whitespace-nowrap mb-2">
                 Tech Stack
               </p>
               <div className="flex flex-wrap gap-1.5">

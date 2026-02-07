@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center">
               <div>
                 <h6 className="footer-title">Thank you</h6>
-                <p className="text-sm">Copyright © 2026 - Jayani Anuthtara</p>
+                <p className="text-sm">Copyright © 2026 - Jayani Anuththara</p>
               </div>
             </div>
 

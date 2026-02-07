@@ -23,9 +23,9 @@ const NavBar = () => {
                 />{" "}
               </svg>
             </div>
-            <ul className="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <ul className="menu menu-sm dropdown-content bg-base-200 rounded-box z-20 mt-3 w-52 p-2 shadow">
               <li>
-                <a href="#hero">Home</a>
+                <a href="#hero">About</a>
               </li>
               <li>
                 <a href="#projects">Projects</a>
@@ -45,7 +45,7 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a href="#hero">Home</a>
+              <a href="#hero">About</a>
             </li>
             <li>
               <a href="#projects">Projects</a>
@@ -60,6 +60,12 @@ const NavBar = () => {
         </div>
         <div className="navbar-end">
           <ThemeController />
+          <a
+            href="#contact"
+            className="ml-4 inline-flex items-center gap-2 bg-teal-500 text-base-content px-4 py-2 rounded-xl text-sm font-semibold hover:bg-teal-400 transition-colors duration-200"
+          >
+            Hire Me
+          </a>
         </div>
       </div>
     </>
