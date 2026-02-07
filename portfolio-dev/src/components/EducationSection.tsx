@@ -1,4 +1,4 @@
-import { GraduationCap, BookOpen, Award } from "lucide-react";
+import { GraduationCap, BookOpen } from "lucide-react";
 
 const educationData = [
   {

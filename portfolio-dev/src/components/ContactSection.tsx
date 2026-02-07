@@ -5,7 +5,6 @@ import {
   Linkedin,
   Github,
   ArrowUpRight,
-  Instagram,
   Send,
 } from "lucide-react";
 import SectionHeading from "./SectionHeading";

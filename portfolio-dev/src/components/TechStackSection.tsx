@@ -4,7 +4,6 @@ import {
   Boxes,
   GitBranch,
   Database,
-  Smartphone,
   Brain,
 } from "lucide-react";
 import TechIcon from "./TechIcon";

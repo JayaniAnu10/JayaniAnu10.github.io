@@ -1,4 +1,4 @@
-import { Cog, Eye, ScrollText, ExternalLink, MoveUp } from "lucide-react";
+import { Cog, Eye, ExternalLink, MoveUp } from "lucide-react";
 import SmallTechIcons from "./SmallTechIcons";
 import RepoButton from "./buttons/RepoButton";
 import { Link } from "react-router-dom";
