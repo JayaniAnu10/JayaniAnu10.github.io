@@ -9,7 +9,7 @@ const educationData = [
     degree: "Bachelor of Computer Science (Undergraduate)",
     stream: "Computer Science",
     location: "Matara, Sri Lanka",
-    highlight: "Passed with higher GPA of 3.98",
+    highlight: "Passed with higher GPA of 3.97",
     tags: ["Data Structures - A", "OOP - A", "DBMS - A+"],
     accent: "text-teal-400",
     glowColor: "bg-teal-500/10",

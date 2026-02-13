@@ -81,6 +81,8 @@ const Project_2 = () => {
               <div className="absolute bottom-4 left-4 flex gap-2 z-10">
                 <a
                   href="http://eventra.jayanidahanayake.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 bg-teal-500 hover:bg-teal-400 text-white text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-lg shadow-teal-500/25 transition-all duration-200 hover:shadow-teal-500/40 hover:-translate-y-0.5"
                 >
                   <Eye className="size-3.5" />

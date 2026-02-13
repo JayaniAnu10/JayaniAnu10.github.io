@@ -2,6 +2,7 @@ import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import heroImage from "../assets/profile photo4.png";
 import { motion, type Variants } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import resumePDF from "../assets/Jayani_Dahanayake_Resume.pdf";
 
 const Hero = () => {
   const itemVariants: Variants = {
@@ -20,7 +21,11 @@ const Hero = () => {
       label: "LinkedIn",
       href: "https://linkedin.com/in/jayani-dahanayaka",
     },
-    { icon: Mail, label: "Email", href: "mailto:jayanianuththara10@gmail.com" },
+    {
+      icon: Mail,
+      label: "Email",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=jayanianuththara10@gmail.com",
+    },
   ];
 
   return (
@@ -127,23 +132,25 @@ const Hero = () => {
               </a>
 
               <a
-                href="#contact"
+                href={resumePDF}
+                download="Jayani_Dahanayake_Resume.pdf"
                 className="
-                  inline-flex 
-                  items-center 
-                  gap-2 
-                  bg-base-300 
-                  border 
-                  border-white/12 
-                  hover:border-white/25 
-                  text-sm 
-                  font-semibold 
-                  px-5 
-                  py-2.5 
-                  rounded-full 
-                  transition-all 
-                  duration-200 
-                  hover:-translate-y-0.5"
+    inline-flex 
+    items-center 
+    gap-2 
+    bg-base-300 
+    border 
+    border-white/12 
+    hover:border-white/25 
+    text-sm 
+    font-semibold 
+    px-5 
+    py-2.5 
+    rounded-full 
+    transition-all 
+    duration-200 
+    hover:-translate-y-0.5
+  "
               >
                 Download Resume
               </a>
@@ -160,6 +167,8 @@ const Hero = () => {
                   <a
                     key={s.label}
                     href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={s.label}
                     className="size-9 rounded-lg bg-base-300/50 border border-white/10 hover:border-teal-500/35 hover:bg-teal-500/10 flex items-center justify-center text-gray-400 hover:text-teal-400 transition-all duration-200 hover:-translate-y-0.5"
                   >

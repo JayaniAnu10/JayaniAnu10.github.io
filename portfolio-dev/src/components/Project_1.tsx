@@ -1,9 +1,8 @@
-import { Cog, Eye, ScrollText, ExternalLink, MoveUp } from "lucide-react";
+import { Eye, ExternalLink, MoveUp } from "lucide-react";
 import SmallTechIcons from "./SmallTechIcons";
 import RepoButton from "./buttons/RepoButton";
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import heroImage from "../assets/eventra6.png";
+import heroImage from "../assets/daybee.lk.png";
 
 const Project_1 = () => {
   const [readMore, setReadMore] = useState<boolean>(false);
@@ -11,15 +10,15 @@ const Project_1 = () => {
   const devRepos = [
     {
       name: "Repository · Deployed",
-      link: "",
+      link: "https://github.com/JayaniAnu10/Smart-Part-time-job-finder",
     },
     {
       name: "Backend",
-      link: "",
+      link: "https://github.com/JayaniAnu10/Smart-Part-time-job-finder/tree/main/backend/part-time-backend",
     },
     {
       name: "Frontend",
-      link: "",
+      link: "https://github.com/JayaniAnu10/Smart-Part-time-job-finder/tree/main/frontend/part-time-react",
     },
   ];
 
@@ -94,7 +93,9 @@ const Project_1 = () => {
               {/* floating action pills */}
               <div className="absolute bottom-4 left-4 flex gap-2 z-10">
                 <a
-                  href=""
+                  href="http://daybee.jayanidahanayake.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 bg-teal-500 hover:bg-teal-400 text-white text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-lg shadow-teal-500/25 transition-all duration-200 hover:shadow-teal-500/40 hover:-translate-y-0.5"
                 >
                   <Eye className="size-3.5" />
@@ -120,29 +121,14 @@ const Project_1 = () => {
             </div>
             {/* live URL */}
             <a
-              href=""
+              href="http://daybee.jayanidahanayake.me"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-teal-400 hover:text-teal-300 text-sm font-medium transition-colors w-fit group"
             >
               <ExternalLink className="size-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              www.daybeelk.adithyashenal.me
+              www.daybee.jayanidahanayake.me
             </a>
-            {/* action buttons row */}
-            <div className="flex flex-wrap gap-2.5">
-              <button className="inline-flex items-center gap-2 border border-teal-500/40 text-teal-400 hover:bg-teal-500/10 text-xs font-semibold px-4 py-2 rounded-full transition-colors duration-200">
-                <ScrollText size={14} />
-                Documentation
-              </button>
-              {/*to="projectOneArch"*/}
-              <Link
-                to=""
-                className="inline-flex items-center gap-2 bg-teal-500/15 border border-teal-500/30 text-teal-400 hover:bg-teal-500/25 text-xs font-semibold px-4 py-2 rounded-full transition-colors duration-200"
-              >
-                <Cog size={14} />
-                System Architecture
-              </Link>
-            </div>
 
             {/* ─── TECH STACK ─── */}
             <div>
